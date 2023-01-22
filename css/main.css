@@ -153,6 +153,7 @@ body{
 	font-size: xx-large;
 	font-size: 14px;
 	line-height: 0.2;
+	transition: 0.5s;
 }
 .footer__block--delivery img{
 	transform: rotate(190deg);
@@ -169,6 +170,7 @@ body{
 	font-size: larger;
 	font-size: 10px;
 	font-style: italic;
+	transition: 0.5s;
 }
 .footer__block--plana>a{
 	text-decoration: none;
@@ -176,6 +178,7 @@ body{
 	font-size: larger;
 	font-weight: 1000;
 	text-align: center;
+	transition: 0.5s;
 }
 .footer__block--google>a, .footer__block--zalando>a{
 	text-decoration: none;
@@ -183,6 +186,7 @@ body{
 	font-size: larger;
 	font-weight: 800;
 	text-align: center;
+	transition: 0.5s;
 }
 .footer__block--tw>a>img{
 	width: 40px;
@@ -197,4 +201,5 @@ body{
  	font-weight: 600;
 	font-size: 20px;
 	text-align: center;
+	transition: 0.5s;
 }
