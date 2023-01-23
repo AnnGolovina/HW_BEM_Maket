@@ -76,7 +76,7 @@ body{
 	padding: 10px;
 	font-weight: bolder;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: all 0.5s;
 }
 .header__button:hover{
 	background-color: #000;
@@ -114,15 +114,20 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	transition: 0.5s;
+	transition: all 0.5s;
 }
 .section__button>button>img{
-	background-color:  #eceaf8;
+	background-color:  transparent;
 	margin-right: 10px;
+	filter: invert(1);
+	transition: all 0.5s;
 }
 .section__button>button:hover{
 	background-color: #f3eeee;
 	color: #000;
+}
+.section__button>button:hover>img{
+	filter: invert(0);
 }
 .content__footer{
 	width: 900px;
@@ -141,11 +146,15 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	transition: all 0.5s;
 }
 .footer__block--zalando img{
-	background-color: #eceaf8;
+	background-color: transparent;
 	width: 25px;
 	margin-right: 5px;
+	filter: invert(1);
+	filter: contrast(10%);
+	transition: all 0.5s;
 }
 .footer__block--guide>a{
 	text-decoration: none;
@@ -153,21 +162,32 @@ body{
 	font-size: xx-large;
 	font-size: 14px;
 	line-height: 0.2;
-	transition: 0.5s;
+	transition: all 0.5s;
 }
-.footer__block--delivery img{
-	transform: rotate(190deg);
-	color: #5c5b5b;
+.footer__block--delivery>a>img{
+	width: 40px;
+	height: auto;
+	margin-left: 30px;
+	transform: rotate(0deg);
+	color: transparent;
+	filter: invert(1);
+	filter: contrast(1%);
+	transition: all 0.5s;
 }
 .footer__block--delivery{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: baseline;
+	transition: all 0.5s;
+}
+.footer__block--delivery p{
+	font-size: 16px;
+	margin-top: 0;
 }
 .footer__block--delivery>a, .footer__block--lern>a{
 	text-decoration: none;
-	color: #919191;
-	font-size: larger;
+	color: #919191;	
 	font-size: 10px;
 	font-style: italic;
 	transition: 0.5s;
@@ -191,8 +211,13 @@ body{
 .footer__block--tw>a>img{
 	width: 40px;
 	height: auto;
-	background-color: #eceaf8;
-	color: #5a5959;
+	background-color: transparent;
+	filter: invert(1);
+	filter: contrast(10%);
+	transition: all 0.5s;
+}
+.footer__block--tw>a:hover>img, .footer__block--zalando:hover>a> img, .footer__block--delivery:hover img{
+	filter: invert(0);
 }
 .footer__block--th>a{
 	text-decoration: none;
